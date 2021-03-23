@@ -8,7 +8,7 @@ function clockNeedles() {
     let hours = date.getHours()
     let minutes = date.getMinutes()
     let seconds = date.getSeconds()
-    hoursNeedle.style.transform = `translate(-50%, -100%) rotate(${scale(hours, 0, 23, 0, 360 )}deg)`
+    hoursNeedle.style.transform = `translate(-50%, -100%) rotate(${scale(hours, 0, 11, 0, 360 )}deg)`
     minutesNeedle.style.transform = `translate(-50%, -100%) rotate(${scale(minutes, 0, 59, 0, 360 )}deg)`
     secondsNeedle.style.transform = `translate(-50%, -100%) rotate(${scale(seconds, 0, 59, 0, 360 )}deg)`
 }
